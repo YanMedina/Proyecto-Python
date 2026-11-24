@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMantenimiento">
+    <property name="title">
+     <string>Mantenimiento</string>
+    </property>
+    <addaction name="action_programas"/>
+    <addaction name="action_empleados"/>
+   </widget>
+   <widget class="QMenu" name="menuReportes">
+    <property name="title"><string>Reportes</string></property>
+    <addaction name="action_reporte_empleados"/>
+   </widget>
+   <addaction name="menuMantenimiento"/>
+   <addaction name="menuReportes"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_programas">
+   <property name="text">
+    <string>Programa de Estudio</string>
+   </property>
+  </action>
+  <action name="action_empleados">
+   <property name="text">
+    <string>Empleados</string>
+   </property>
+  </action>
+  <action name="action_reporte_empleados">
+   <property name="text"><string>Consulta de Personal</string></property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

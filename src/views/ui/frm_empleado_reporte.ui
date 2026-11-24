@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>1040</width><height>650</height></rect></property>
+  <property name="windowTitle"><string>Consulta de Personal</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing"><number>12</number></property>
+   <property name="leftMargin"><number>16</number></property>
+   <property name="topMargin"><number>16</number></property>
+   <property name="rightMargin"><number>16</number></property>
+   <property name="bottomMargin"><number>16</number></property>
+   <item>
+    <layout class="QHBoxLayout" name="layout_filtros">
+     <item><widget class="QLabel" name="lbl_rol"><property name="text"><string>Rol:</string></property></widget></item>
+     <item><widget class="QComboBox" name="cbo_rol"/></item>
+     <item><widget class="QLabel" name="lbl_turno"><property name="text"><string>Turno:</string></property></widget></item>
+     <item>
+      <widget class="QComboBox" name="cbo_turno">
+       <item><property name="text"><string>TODOS</string></property></item>
+       <item><property name="text"><string>Mañana</string></property></item>
+       <item><property name="text"><string>Tarde</string></property></item>
+       <item><property name="text"><string>Noche</string></property></item>
+      </widget>
+     </item>
+     <item><widget class="QCheckBox" name="chk_activos"><property name="text"><string>Mostrar solo personal activo</string></property></widget></item>
+     <item>
+      <widget class="QLineEdit" name="txt_buscar">
+       <property name="placeholderText"><string>Buscar por DNI o Apellidos...</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tbl_reporte">
+     <property name="editTriggers"><set>QAbstractItemView::EditTrigger::NoEditTriggers</set></property>
+     <property name="selectionBehavior"><enum>QAbstractItemView::SelectionBehavior::SelectRows</enum></property>
+     <property name="columnCount"><number>7</number></property>
+     <column><property name="text"><string>Código</string></property></column>
+     <column><property name="text"><string>DNI</string></property></column>
+     <column><property name="text"><string>Apellidos y Nombres</string></property></column>
+     <column><property name="text"><string>Cargo</string></property></column>
+     <column><property name="text"><string>Turno</string></property></column>
+     <column><property name="text"><string>Rol</string></property></column>
+     <column><property name="text"><string>Estado</string></property></column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
